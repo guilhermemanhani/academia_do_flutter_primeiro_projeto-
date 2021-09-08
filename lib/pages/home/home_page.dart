@@ -1,6 +1,14 @@
 import 'package:flutter/material.dart';
 
-enum PopupMenuPages { container, rows_column, media_query, layout_builder }
+enum PopupMenuPages {
+  container,
+  rows_column,
+  media_query,
+  layout_builder,
+  botoes_rotacao_texto,
+  scrollview,
+  listview,
+}
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -30,6 +38,15 @@ class HomePage extends StatelessWidget {
                 case PopupMenuPages.layout_builder:
                   Navigator.of(context).pushNamed('/layout_builder');
                   break;
+                case PopupMenuPages.botoes_rotacao_texto:
+                  Navigator.of(context).pushNamed('/botoes_rotacao_texto');
+                  break;
+                case PopupMenuPages.scrollview:
+                  Navigator.of(context).pushNamed('/scrollview');
+                  break;
+                case PopupMenuPages.listview:
+                  Navigator.of(context).pushNamed('/listview');
+                  break;
               }
             },
             itemBuilder: (BuildContext context) {
@@ -49,6 +66,18 @@ class HomePage extends StatelessWidget {
                 PopupMenuItem<PopupMenuPages>(
                   value: PopupMenuPages.layout_builder,
                   child: Text('Layout builder'),
+                ),
+                PopupMenuItem<PopupMenuPages>(
+                  value: PopupMenuPages.botoes_rotacao_texto,
+                  child: Text('Botoes e rotacao de texto'),
+                ),
+                PopupMenuItem<PopupMenuPages>(
+                  value: PopupMenuPages.scrollview,
+                  child: Text('Scroll'),
+                ),
+                PopupMenuItem<PopupMenuPages>(
+                  value: PopupMenuPages.listview,
+                  child: Text('ListView'),
                 ),
               ];
             },
