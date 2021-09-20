@@ -11,6 +11,11 @@ enum PopupMenuPages {
   dialogs,
   snackBar,
   forms,
+  cidades,
+  stack,
+  stack2,
+  bottombar,
+  avatarPage,
 }
 
 class HomePage extends StatelessWidget {
@@ -59,6 +64,21 @@ class HomePage extends StatelessWidget {
                 case PopupMenuPages.forms:
                   Navigator.of(context).pushNamed('/forms');
                   break;
+                case PopupMenuPages.cidades:
+                  Navigator.of(context).pushNamed('/cidades');
+                  break;
+                case PopupMenuPages.stack:
+                  Navigator.of(context).pushNamed('/stack');
+                  break;
+                case PopupMenuPages.stack2:
+                  Navigator.of(context).pushNamed('/stack2');
+                  break;
+                case PopupMenuPages.bottombar:
+                  Navigator.of(context).pushNamed('/bottombar');
+                  break;
+                case PopupMenuPages.avatarPage:
+                  Navigator.of(context).pushNamed('/avatarPage');
+                  break;
               }
             },
             itemBuilder: (BuildContext context) {
@@ -102,6 +122,26 @@ class HomePage extends StatelessWidget {
                 PopupMenuItem<PopupMenuPages>(
                   value: PopupMenuPages.forms,
                   child: Text('forms'),
+                ),
+                PopupMenuItem<PopupMenuPages>(
+                  value: PopupMenuPages.cidades,
+                  child: Text('cidades'),
+                ),
+                PopupMenuItem<PopupMenuPages>(
+                  value: PopupMenuPages.stack,
+                  child: Text('stack'),
+                ),
+                PopupMenuItem<PopupMenuPages>(
+                  value: PopupMenuPages.stack2,
+                  child: Text('stack2'),
+                ),
+                PopupMenuItem<PopupMenuPages>(
+                  value: PopupMenuPages.bottombar,
+                  child: Text('bottombar'),
+                ),
+                PopupMenuItem<PopupMenuPages>(
+                  value: PopupMenuPages.avatarPage,
+                  child: Text('avatarPage'),
                 ),
               ];
             },

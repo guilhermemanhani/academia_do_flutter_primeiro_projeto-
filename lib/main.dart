@@ -1,4 +1,7 @@
 import 'package:academia_do_flutter_primeiro_projeto/pages/botoes_rotacao_texto/botoes_rotacao_texto_page.dart';
+import 'package:academia_do_flutter_primeiro_projeto/pages/bottom_navigator/bottom_navigator_page.dart';
+import 'package:academia_do_flutter_primeiro_projeto/pages/cidades/cidades_page.dart';
+import 'package:academia_do_flutter_primeiro_projeto/pages/circleavatar/circleavatar_page.dart';
 import 'package:academia_do_flutter_primeiro_projeto/pages/container/container_page.dart';
 import 'package:academia_do_flutter_primeiro_projeto/pages/dialogs/dialogs_page.dart';
 import 'package:academia_do_flutter_primeiro_projeto/pages/forms/forms_page.dart';
@@ -9,6 +12,8 @@ import 'package:academia_do_flutter_primeiro_projeto/pages/rows_columns/rows_col
 import 'package:academia_do_flutter_primeiro_projeto/pages/scrolls/listview_page.dart';
 import 'package:academia_do_flutter_primeiro_projeto/pages/scrolls/singlechildscrollview_page.dart';
 import 'package:academia_do_flutter_primeiro_projeto/pages/snackbar/snackbar_page.dart';
+import 'package:academia_do_flutter_primeiro_projeto/pages/stack/stack_page.dart';
+import 'package:academia_do_flutter_primeiro_projeto/pages/stack/stack_page2.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -46,6 +51,11 @@ class MyApp extends StatelessWidget {
         '/dialogs': (_) => DialogsPage(),
         '/snackbarPage': (_) => SnackbarPage(),
         '/forms': (_) => FormsPage(),
+        '/cidades': (_) => CidadesPage(),
+        '/stack': (_) => StackPage(),
+        '/stack2': (_) => StackPage2(),
+        '/bottombar': (_) => BottomNavigatorPage(),
+        '/avatarPage': (_) => CircleavatarPage(),
       },
     );
   }
